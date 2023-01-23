@@ -25,6 +25,8 @@ management:
       exposure:
         include: health,info,prometheus,metrics
   metrics:
+    tags:
+      application: observability-demo
     distribution:
       percentiles-histogram:
         http:

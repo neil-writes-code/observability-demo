@@ -1,19 +1,14 @@
-package ca.neilwhite.observabilitydemo;
+package ca.neilwhite.observabilitydemo.configurations;
 
 import io.micrometer.observation.ObservationRegistry;
 import io.micrometer.observation.aop.ObservedAspect;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
-@SpringBootApplication
-public class ObservabilityDemoApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(ObservabilityDemoApplication.class, args);
-    }
+@Configuration
+public class ApplicationConfiguration {
 
     @Bean
     ObservedAspect observedAspect(ObservationRegistry registry) {
