@@ -11,5 +11,5 @@ service itself. There are two Dockerfiles for the service, one for a standard `.
 Grafana URL: `http://localhost:3000/`
 
 Dashboards:
-* JVM - `https://grafana.com/grafana/dashboards/4701-jvm-micrometer/`
-* Native - `https://grafana.com/grafana/dashboards/17175-spring-boot-observability/`
+* JVM Only - `https://grafana.com/grafana/dashboards/4701-jvm-micrometer/`
+* JVM and Native - `https://grafana.com/grafana/dashboards/17175-spring-boot-observability/`
